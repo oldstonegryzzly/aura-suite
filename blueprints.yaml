@@ -1,0 +1,79 @@
+name: Aura Suite
+slug: aura-suite
+type: plugin
+version: 1.0.0
+description: "Gestione unificata di metadati SEO, Schema.org e registro autori."
+icon: user-check
+author:
+  name: OldStoneGrizzly
+
+dependencies:
+  - name: grav
+    version: '>=2.0.0'
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    auto_append_author:
+      type: toggle
+      label: PLUGIN_AURA.AUTO_APPEND_AUTHOR
+      help: PLUGIN_AURA.AUTO_APPEND_AUTHOR_HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.YES
+        0: PLUGIN_ADMIN.NO
+
+    authors:
+      type: list
+      label: PLUGIN_AURA.AUTHORS_LIST
+      btnLabel: PLUGIN_AURA.ADD_AUTHOR
+      fields:
+        .label:
+          type: text
+          label: PLUGIN_AURA.LABEL
+          placeholder: PLUGIN_AURA.LABEL_PLACEHOLDER
+
+        .name:
+          type: text
+          label: PLUGIN_AURA.NAME
+          placeholder: PLUGIN_AURA.NAME_PLACEHOLDER
+
+        .description:
+          type: textarea
+          label: PLUGIN_AURA.DESCRIPTION
+          rows: 4
+
+        .person-website-url:
+          type: text
+          label: PLUGIN_AURA.WEBSITE
+
+        .person-mail:
+          type: email
+          label: PLUGIN_AURA.EMAIL
+
+        .person-mastodon-url:
+          type: text
+          label: PLUGIN_AURA.MASTODON
+
+        .person-twitter-user:
+          type: text
+          label: PLUGIN_AURA.TWITTER
+
+        .image:
+          type: file
+          label: PLUGIN_AURA.IMAGE
+          destination: 'user/images'
+          multiple: false
+          accept:
+            - image/*

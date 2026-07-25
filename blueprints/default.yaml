@@ -1,0 +1,34 @@
+title: Default
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        aura:
+          type: tab
+          title: Aura
+
+          fields:
+            header.aura.pagetype:
+              type: select
+              label: PLUGIN_AURA.PAGE_TYPE
+              default: article
+              options:
+                article: PLUGIN_AURA.ARTICLE
+                website: PLUGIN_AURA.WEBSITE_TYPE
+
+            header.aura.description:
+              type: textarea
+              label: PLUGIN_AURA.META_DESCRIPTION
+              rows: 3
+
+            header.aura.author:
+              type: select
+              label: PLUGIN_AURA.NAME
+              size: medium
+              config-options@: plugins.aura-suite.authors_list

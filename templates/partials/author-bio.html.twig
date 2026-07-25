@@ -1,0 +1,32 @@
+<div class="aura-author-bio" style="margin-top: 2.5rem; padding: 1.5rem; border-top: 2px solid #eee; background-color: rgba(0,0,0,0.02); border-radius: 6px;">
+    <div style="display: flex; gap: 1.25rem; align-items: flex-start;">
+        {% if author.image is defined and author.image is not empty %}
+            {% set img_path = author.image|keys|first %}
+            <div class="aura-author-avatar" style="flex-shrink: 0;">
+                <img src="{{ url(img_path) }}" alt="{{ author.name }}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+            </div>
+        {% endif %}
+
+        <div class="aura-author-details">
+            <h4 style="margin: 0 0 0.5rem 0; font-size: 1.15rem;">{{ author.name }}</h4>
+            {% if author.description %}
+                <p style="margin: 0 0 0.75rem 0; font-size: 0.95rem; line-height: 1.5;">{{ author.description|nl2br }}</p>
+            {% endif %}
+
+            <div class="aura-author-links" style="display: flex; gap: 0.75rem; font-size: 0.85rem;">
+                {% if author['person-website-url'] %}
+                    <a href="{{ author['person-website-url'] }}" target="_blank" rel="noopener">Sito Web</a>
+                {% endif %}
+                {% if author['person-mastodon-url'] %}
+                    <a href="{{ author['person-mastodon-url'] }}" target="_blank" rel="noopener">Mastodon</a>
+                {% endif %}
+                {% if author['person-twitter-user'] %}
+                    <a href="https://x.com/{{ author['person-twitter-user'] }}" target="_blank" rel="noopener">Twitter/X</a>
+                {% endif %}
+                {% if author['person-mail'] %}
+                    <a href="mailto:{{ author['person-mail'] }}">Email</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
