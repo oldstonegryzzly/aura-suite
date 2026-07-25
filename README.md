@@ -1,27 +1,55 @@
-# Aura Suite Plugin per Grav CMS
+# Aura Suite Plugin for Grav CMS
 
-**Aura Suite** è un plugin avanzato per **Grav CMS** sviluppato per la gestione semplificata e strutturata dei metadati dell'autore, della tassonomia e del mark-up semantico JSON-LD (Schema.org).
+**Aura Suite** is an advanced evolution of the original [Aura Authors](https://github.com/matt-j-m/grav-plugin-aura-authors) plugin for **Grav CMS**. It provides streamlined, structured management of author metadata, taxonomy synchronization, and JSON-LD (Schema.org) semantic markup.
 
-Progettato con un'architettura nativa per **PHP 8** e **Grav 2.0+ (Flex Objects)**, il plugin permette di centrale la gestione degli autori e di iniettare in modo automatico i blocchi bio e i dati strutturati per i motori di ricerca.
-
----
-
-## 🚀 Caratteristiche Principali
-
-* **Gestione Centralizzata Autori**: Configurazione semplice da pannello Admin o via file YAML (`user/config/plugins/aura-suite.yaml`).
-* **Sincronizzazione Automatica Tassonomie**: Mappatura trasparente tra l'autore selezionato e la tassonomia `author` di Grav al momento del salvataggio.
-* **Integrazione Dati Strutturati (SEO/JSON-LD)**: Generazione automatica di Schema.org (`Article` / `WebSite`) pronto per i motori di ricerca.
-* **Iniezione Bio Dinamica**: Inserimento automatico del template di bio dell'autore in coda ai contenuti delle pagine.
-* **Compatibile con Grav 2.0 & Flex Objects**: Utilizzo del binding nativo `config-options@` per la massima reattività nell'Admin.
+Built natively for **PHP 8** and **Grav 2.0+ (Flex Objects)**, the plugin centralizes author profiles and automatically injects author bio blocks and structured data optimized for search engines.
 
 ---
 
-## 📦 Installazione
+## 🚀 Key Features
 
-### Tramite Git (Consigliato)
+* **Centralized Author Management**: Easily configure author profiles via the Admin panel or direct YAML editing (`user/config/plugins/aura-suite.yaml`).
+* **Automatic Taxonomy Syncing**: Seamlessly maps the selected author to Grav's `author` taxonomy upon saving pages.
+* **Structured Data (SEO / JSON-LD)**: Automatically generates Schema.org markup (`Article` / `WebSite`) ready for search engines.
+* **Dynamic Bio Injection**: Automatically appends customizable author bio templates to page content.
+* **Grav 2.0 & Flex Objects Native**: Utilizes `config-options@` binding for maximum responsiveness in the Admin panel.
 
-Spostati nella cartella dei plugin del tuo sito Grav e clona il repository:
+---
+
+## 📦 Installation
+
+### Via Git (Recommended)
+
+Navigate to your Grav installation's plugin directory and clone the repository:
 
 ```bash
 cd user/plugins
 git clone [https://github.com/oldstonegryzzly/aura-suite.git](https://github.com/oldstonegryzzly/aura-suite.git) aura-suite
+```
+### Manual Installation
+Download the ZIP package from the repository.
+
+Extract the contents into user/plugins/aura-suite.
+
+Clear the Grav cache:
+
+```bash
+bin/grav clear-site-cache
+```
+## ⚙️ Configuration
+
+Create or edit the configuration file at user/config/plugins/aura-suite.yaml:
+
+```bash
+enabled: true
+auto_append_author: true
+```
+## 👨‍💻 Credits & Acknowledgments
+Original Plugin & Concept: Based on grav-plugin-aura-authors created by Matt J M (@matt-j-m).
+
+Aura Suite Evolution & Maintenance: OldstoneGryzzly (@oldstonegryzzly).
+
+Environment: Developed on Linux (Kubuntu / KDE Plasma) for Grav CMS.
+
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
