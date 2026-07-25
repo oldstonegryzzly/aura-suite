@@ -1,8 +1,8 @@
 # Aura Suite Plugin for Grav CMS
 
-**Aura Suite** is an advanced evolution of the original [Aura Authors](https://github.com/matt-j-m/grav-plugin-aura-authors) plugin for **Grav CMS**. It provides streamlined, structured management of author metadata, taxonomy synchronization, and JSON-LD (Schema.org) semantic markup.
+**Aura Suite** is an advanced evolution of the original [Aura Authors](https://github.com/matt-j-m/grav-plugin-aura-authors) plugin for **Grav CMS**.
 
-Built natively for **PHP 8** and **Grav 2.0+ (Flex Objects)**, the plugin centralizes author profiles and automatically injects author bio blocks and structured data optimized for search engines.
+Built natively for **PHP 8** and **Grav 2.0+**, the plugin centralizes author profiles and automatically injects author bio blocks and structured data optimized for search engines.
 
 ---
 
