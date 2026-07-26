@@ -54,6 +54,10 @@ To migrate from **Aura Authors** to **Aura Suite**, you simply need to copy your
 ```bash
 cp user/config/plugins/aura-authors.yaml user/config/plugins/aura-suite.yaml
 ```
+* **Important Step:** Log in to the Grav Admin panel, open the Aura Suite plugin settings, and click Save at least once.
+
+Note: Saving the configuration triggers the automatic generation of 'authors_list' (required for dropdown selection in page blueprints). After this single save, all existing profiles, descriptions, and custom fields will be fully functional across your site.
+
 
 ## 👨‍💻 Credits & Acknowledgments
 Original Plugin & Concept: Based on grav-plugin-aura-authors created by Matt J M (@matt-j-m).
