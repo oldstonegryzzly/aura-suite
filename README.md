@@ -58,6 +58,10 @@ cp user/config/plugins/aura-authors.yaml user/config/plugins/aura-suite.yaml
 
 Note: Saving the configuration triggers the automatic generation of `authors_list` (required for dropdown selection in page blueprints). After this single save, all existing profiles, descriptions, and custom fields will be fully functional across your site.
 
+## TODO
+
+- [ ] **Page Template Filtering**: Add configuration options to restrict automatic author bio injection only to specific page templates (e.g., `item`, `blog`), leaving other templates untouched.
+- [ ] **Advanced SEO & Schema.org Configuration**: Enhance the SEO section in the plugin settings to allow toggling JSON-LD output, selecting custom Schema types (`Article`, `BlogPosting`, `NewsArticle`, `WebSite`), and managing Publisher details (organization name and logo URL).
 
 ## 👨‍💻 Credits & Acknowledgments
 Original Plugin & Concept: Based on grav-plugin-aura-authors created by Matt J M (@matt-j-m).
