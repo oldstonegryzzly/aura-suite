@@ -8,6 +8,7 @@ Built natively for **PHP 8** and **Grav 2.0+**, the plugin centralizes author pr
 
 ## 🚀 Key Features
 
+* **Backward Compatible**: Full support for legacy *Aura Authors* YAML configurations alongside modern Grav 2.0 / PHP 8 architecture.
 * **Centralized Author Management**: Easily configure author profiles via the Admin panel or direct YAML editing (`user/config/plugins/aura-suite.yaml`).
 * **Automatic Taxonomy Syncing**: Seamlessly maps the selected author to Grav's `author` taxonomy upon saving pages.
 * **Structured Data (SEO / JSON-LD)**: Automatically generates Schema.org markup (`Article` / `WebSite`) ready for search engines.
