@@ -45,6 +45,16 @@ Create or edit the configuration file at user/config/plugins/aura-suite.yaml:
 enabled: true
 auto_append_author: true
 ```
+## 🔄 Backward Compatibility & Migration
+
+**Aura Suite** is designed to be a drop-in replacement for the original `aura-authors` plugin. 
+
+To migrate from **Aura Authors** to **Aura Suite**, you simply need to copy your existing configuration file:
+
+```bash
+cp user/config/plugins/aura-authors.yaml user/config/plugins/aura-suite.yaml
+```
+
 ## 👨‍💻 Credits & Acknowledgments
 Original Plugin & Concept: Based on grav-plugin-aura-authors created by Matt J M (@matt-j-m).
 
